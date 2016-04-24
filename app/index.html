@@ -1,0 +1,48 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<title>W.A.T.E.R.S.</title>
+	<meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- build:css styles/vendor.css -->
+    <link rel="stylesheet" href="lib/styles/leaflet.css">
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700' rel='stylesheet' type='text/css'>
+   	<!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <link rel="shortcut icon" href="/favicon.ico">
+
+</head>
+<body>
+  <div id="main">
+		<header class="group">
+			<h1 class="appName">W.A.T.E.R.S.</h1>
+      <h2 class="appSubheading">We All Track Earth's Rising Sea Levels</h2>
+		</header>
+
+	<div class="map-application">
+		<div id="map" class="map"></div>
+    <div class="help-text">Click on a spot to view sea levels.</div>
+  </div>
+  </div>
+	<!-- build:js scripts/vendor.js -->
+  <script src="lib/scripts/leaflet.js"></script>
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/topojson/topojson.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+	<!-- build:js scripts/main.js -->
+	<script src="scripts/main.js"></script>
+	<!-- endbuild -->
+</body>
+</html>
