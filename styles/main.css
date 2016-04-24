@@ -33,7 +33,7 @@ header {
 body,
 html {
   height: 100%;
-  background: url("/images/sand-text.jpg") repeat;
+  background: url("./images/sand-text.jpg") repeat;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

@@ -4,7 +4,7 @@
 (function (window, document, L) {
 	'use strict';
 
-  var address = 'http://localhost:9000/coastal_view.html';
+  var address = 'http://mrbarbasa.github.io/waters/coastal_view.html';
   var map = L.map('map', {
     center: [21.4767, -157.9970],
     zoom: 10,
