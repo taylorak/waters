@@ -12,7 +12,7 @@
     scrollWheelZoom: false
   });
 
-  L.Icon.Default.imagePath = 'images/';
+  L.Icon.Default.imagePath = './images/';
 
   $.getJSON('data/mock/filtered_annual_sea_levels.json')
     .done(function (dataset) {
