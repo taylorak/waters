@@ -4,7 +4,7 @@
 (function (window, document, L) {
 	'use strict';
 
-  var address = 'http://mrbarbasa.github.io/waters/coastal_view.html';
+  var address = '/coastal_view.html';
   var map = L.map('map', {
     center: [21.4767, -157.9970],
     zoom: 10,
@@ -12,7 +12,7 @@
     scrollWheelZoom: false
   });
 
-  L.Icon.Default.imagePath = './images/';
+  L.Icon.Default.imagePath = '/images/';
 
   $.getJSON('data/mock/filtered_annual_sea_levels.json')
     .done(function (dataset) {

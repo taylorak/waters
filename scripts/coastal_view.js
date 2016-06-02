@@ -28,7 +28,7 @@ $.getJSON('data/coastal/' + name + '.json')
     function max(data, cb) {
       return data.map(cb).reduce(function(prev, curr) {
         return curr > prev ? curr : prev;
-      })
+      });
     }
 
     function min(data, cb) {
@@ -41,10 +41,10 @@ $.getJSON('data/coastal/' + name + '.json')
       return {
         x: evt.pageX - div.offsetLeft,
         y: evt.pageY - div.offsetTop
-      }
+      };
     }
 
-    var container = document.querySelector('#container')
+    var container = document.querySelector('#container');
     var water = document.querySelector('#water');
     var info = document.querySelector('#info');
     var mslText = document.querySelector('#mslText');
@@ -57,11 +57,11 @@ $.getJSON('data/coastal/' + name + '.json')
       var cell = Math.floor(mousePos.x / cellWidth);
 
       var minimum = min(mslData.data, function(d) {
-        return d.y
+        return d.y;
       });
 
       var maximum = max(mslData.data, function(d) {
-        return d.y
+        return d.y;
       });
 
       var dataHeight = maximum - minimum;
